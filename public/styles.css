@@ -126,12 +126,13 @@ a[download]:hover {
 }
 
 .skills-container {
-    display: flex; /* Enables flexbox layout */
-    align-items:center; /* Aligns the boxes at the top */
-    margin: 20px; /* Optional margin around the container */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin: 20px; 
     justify-content: center;
-    gap: 50px;
 }
+
 
 #skills-box, #soft-skills {
     background-color: #008080;
@@ -141,6 +142,7 @@ a[download]:hover {
     width: 30%; /* Set width for each box */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
     color: #f8f9fa; 
+    
 }
 
 #skills-box a {
@@ -270,14 +272,17 @@ a[download]:hover {
 
 /* Source code link styling */
 .source-code {
-    display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
     background-color: #008080; /* Primary background color */
     color: #fff; /* White text */
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 25px;
     transition: background-color 0.3s ease;
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center items horizontally */
+    margin-top: 15px;
+    
 }
 
 .source-code:hover {
@@ -308,22 +313,6 @@ a[download]:hover {
     color:  #FF8C00; /* Optional: Change color on hover */
 }
 
-
-/* Experience Section */
-.experience-list {
-    margin: 40px auto;
-    text-align: center;
-}
-
-.experience-list li {
-    font-size: 18px;
-    color: #343a40; /* Charcoal Gray */
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #f0f4f8; /* Light Gray */
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
-}
 
 /* Footer */
 footer {
