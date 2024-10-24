@@ -1,0 +1,370 @@
+
+* {
+    margin: 30px 0 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Soft Light Gray */
+    color: #343a40; /* Charcoal Gray */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header Section */
+h1, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 div {
+    font-size: 50px;
+    font-weight: bold;
+    color: #008080; /* Teal */
+}
+
+h3 {
+    color: #008080; /* Teal */
+    font-size: 24px;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar {
+    position: absolute;
+    top: 50px;
+    left: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sidebar::before,
+#sidebar::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 30px; 
+    background-color: #000; 
+    margin: 5px 0;
+}
+
+#sidebar::before {
+    margin-bottom: 5px; /* Space between top line and icons */
+}
+
+#sidebar::after {
+    margin-top: 25px; /* Space between icons and bottom line */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    display: block;
+    margin: 0 5px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000; /* Icon color */
+}
+
+
+/* CV Download Button */
+a[download] {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 12px 30px;
+    background-color: #008080; /* Teal */
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;    
+}
+
+a[download]:hover {
+    background-color: #FF8C00; /* Dark Orange */
+}
+
+#about-section {
+    text-align: center; /* Centers the content inside the div */
+    width: 80%; /* Adjust this value to control the width */
+    margin: 0 auto; /* Centers the entire section horizontally */
+}
+
+#about-section a {
+    display: block; /* Makes the link behave like a block element */
+    font-size: 24px; /* Increase the font size of the link */
+    font-weight: bold;
+    margin-bottom: 15px; /* Adds space between the link and the paragraphs */
+    text-decoration: none; /* Removes underline */
+    color: #008080; /* Set color for the link */
+}
+
+#about-section p {
+    margin: 10px 0; /* Adjust the spacing between paragraphs */
+    font-size: 18px; /* Set a comfortable font size */
+    font-weight: bold;
+    line-height: 1.6; /* Set line height for better readability */
+}
+
+.skills-container {
+    display: flex; /* Enables flexbox layout */
+    align-items:center; /* Aligns the boxes at the top */
+    margin: 20px; /* Optional margin around the container */
+    justify-content: center;
+    gap: 50px;
+}
+
+#skills-box, #soft-skills {
+    background-color: #008080;
+    border: 1px solid #008080; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Spacing inside the boxes */
+    width: 30%; /* Set width for each box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    color: #f8f9fa; 
+}
+
+#skills-box a {
+    display: block; /* Makes the link a block element */
+    font-size: 24px; /* Increase the font size of the link */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px; /* Space between the link and the list */
+    text-decoration: none; /* Remove underline */
+    color: #f8f9fa; /* Set color for the link */
+}
+
+#skills-box ul, #soft-skills ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+   
+}
+
+#skills-box li, #soft-skills li {
+    margin: 10px 0; /* Spacing between each skill */
+    font-size: 16px; /* Font size for list items */
+    font-weight: bold;
+    text-align: center;
+    color: #f8f9fa; /* Text color */
+}
+
+#skills-box:hover, #soft-skills:hover {
+    transform: translateY(-5px); /* Slightly lift the box on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    background-color: #FF8C00;/* Change background color on hover */
+}
+
+#contact {
+    text-align: center; /* Center the text and elements inside the section */
+    margin: 20px auto; /* Center the section and add vertical spacing */
+}
+
+
+#contact-form {
+    background-color: #ffffff; /* White */
+    padding: 40px;
+    margin: 50px auto;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form label {
+    font-weight: bold;
+    color: #343a40; /* Charcoal Gray */
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0 20px 0;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    font-size: 16px;
+    color: #343a40; /* Charcoal Gray */
+}
+
+#contact-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #008080; /* Teal */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #FF8C00; /* Dark Orange */
+}
+
+/* Container styling */
+#projects-container {
+    display: flex; /* Arrange projects in a row */
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    justify-content: center; /* Space between each project box */
+    gap: 20px; /* Adds space between the boxes */
+    margin: 40px 0;
+}
+
+/* Project box styling */
+.project-box {
+    background-color: #f8f9fa; /* Soft light gray background */
+    border: 1px solid #343a40; /* Charcoal gray border */
+    border-radius: 10px; /* Slightly rounded corners */
+    padding: 20px;
+    width: 25%; /* Ensure the boxes have equal width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+/* Hover effects */
+.project-box:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    background-color: #e9ecef; /* Change background on hover */
+}
+
+/* Heading and paragraph styles */
+.project-box h3 {
+    font-size: 22px;
+    color:  #008080; /* Primary color for headings */
+    margin-bottom: 10px;
+}
+
+.project-box p {
+    font-size: 16px;
+    color: #343a40;
+    line-height: 1.5;
+}
+
+/* Tech stack styling */
+.tech-stack {
+    font-style: italic;
+    color: #6c757d; /* Muted gray color */
+    margin-top: 10px;
+}
+
+/* Source code link styling */
+.source-code {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #008080; /* Primary background color */
+    color: #fff; /* White text */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.source-code:hover {
+    background-color:  #FF8C00;/* Darken the button on hover */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .project-box {
+        width: 100%; /* Stack boxes on smaller screens */
+    }
+}
+
+.centered-link {
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Optional: Adds vertical spacing */
+}
+
+.centered-link a {
+    text-decoration: none; /* Remove underline */
+    color: #008080; /* Primary background color */
+    font-weight: bold; /* Optional: Makes the text bold */
+    font-size: 2em; /* Optional: Adjusts the font size */
+    
+}
+
+.centered-link a:hover {
+    color:  #FF8C00; /* Optional: Change color on hover */
+}
+
+
+/* Experience Section */
+.experience-list {
+    margin: 40px auto;
+    text-align: center;
+}
+
+.experience-list li {
+    font-size: 18px;
+    color: #343a40; /* Charcoal Gray */
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f0f4f8; /* Light Gray */
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #666;
+    font-size: 14px;
+}
+
+footer a {
+    color: #008080; /* Teal */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #FF8C00; /* Dark Orange */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    h1 div {
+        font-size: 36px;
+    }
+
+    
+
+    #contact-form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 div {
+        font-size: 28px;
+    }
+
+    p, ul li {
+        font-size: 14px;
+    }
+
+    #sidebar {
+        display: none;
+    }
+}
